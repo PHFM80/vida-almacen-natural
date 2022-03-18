@@ -1,0 +1,41 @@
+header{
+    background-color: rgb(96, 96, 179);
+    text-align: center;
+    color: whitesmoke;
+    padding: 5px;
+    margin: 5px;
+}
+.main h1{
+    text-align:center;
+}
+.formulario{
+    background-color: aqua;
+}
+
+.list-producto{
+    background-color: blueviolet;
+}
+
+
+footer{
+    background-color: grey;
+    margin: 2px;
+    padding: 2px;
+    
+}
+.footer-logo{
+    position flex: ;
+    padding: 2px;
+}
+.footer-creado{
+    text-align: center;
+    padding: 2px;
+}
+.footer-inicio{
+    text-align: right;
+    padding: 2px;
+}
+
+.form-group{
+    padding: 5px;
+}

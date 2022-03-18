@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedidos</title>
+    <link rel="stylesheet" href="/formulario de pedido/pedido-estilo.css">
+    <link rel="stylesheet" href="/dist/css/bootstrap.min.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <header> 
+            <h1> Realice su Pedido</h1>  
+         </header>
+       
+       <section class="main row">
+            <div class="formulario col-xs-6 col-md-6" >
+                <h1>Haga su pedido</h1>
+                <form action="" class="">
+                    <!-- Datos Personales -->
+                    <div>
+                        <div class="form-group">
+                            <label for="nombre" id="nombre">Nombre:</label>
+                            <input class="form-control" type="text" id="nombre" placeholder="Escriba su nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido:</label>
+                            <input  class="form-control" type="text" id="apellido" placeholder="Escriba su apellido" required>
+                        </div>
+                    </div>
+
+                    <!-- Datos de Contacto -->
+                    <div>
+                        <div class="form-group">
+                            <label for="tel" id="tel"> Celular N°:</label>
+                            <input  class="form-control" type="tel" id="tel" placeholder=" cod area + numero" required>
+                        </div>
+                        <div class="form-group">
+                                <label for="email" id="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ingrese su Correo Electronico">
+                        </div>
+                        <div class="form-group">
+                                <label for="tel" id="telf"> Telefono Fijo N°:</label>
+                                <input  class="form-control" type="tel" id="telf" placeholder="Telefono Fijo">
+                        </div>
+                    </div>               
+                                            
+                     <!-- Donde retira --> 
+                     <div>
+                        <div class="form-group">
+                            <!--<label for="radio1" >
+                                <input type="radio" name="opcion" id="radio1" > Retiro en Tienda
+                            </label>
+                            <label for="radio2">
+                                <input type="radio" name="opcion" id="radio2"  onclick="showUbicacion()"> Envío a Domicilio
+                            </label>-->
+                            <input type="button" value="retiro en tienda" > <br>
+                            <input type="button" value="envio a domicilio" onclick="showUbicacion()"> <br>
+                        </div>
+                    </div>                
+
+                    <!-- Ubicacion -->
+                    <div id="ubicacion" style="display: none" >
+                        <p>Recuede que el envio a domicilio tiene un costo adicional.</p>
+
+                        <div class="form-group ">
+                            <label for="direccion" id="direccion">Dirección:</label>
+                            <input  class="form-control" type="text" name="Calle" id="direccion"  placeholder="Nombre de la calle">
+                        </div>
+                        <div class="form-group">
+                            <label for="numero" id="numero"> N°:</label>
+                            <input  class="form-control" type="number" name="numero" id="numero"  placeholder="Número">
+                        </div>
+                        <div class="form-group">
+                            <label for="localidad" id="localidad">Localidad:</label>
+                            <select  class="form-control" name="localidad" id="localidad" placeholder="form-control">
+                                    <option value=""> </option>
+                                    <option value="">Godoy Cruz </option>
+                                    <option value="">Guaymallen </option>
+                                    <option value="">Ciudad </option>
+                                    <option value="">Luján </option>
+                                    <option value="">Dorrego </option>
+                                    <option value="">Chacras de Coria </option>
+                                    <option value="">Las Heras </option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Datos del pedido -->
+                    <div>
+                        <div class="form-group">
+                            <label for="pedido">Haga su Pedido</label>
+                            <textarea id="pedido" cols="20" rows="10" placeholder="Ingreso su pedido.  Un producto por fila (producto  _  cantidad)" class="form-control"  required></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Boton de envio --> 
+                    <DIV class="form-group">
+                        <button class="btn btn-primary ">ENVIAR</button>
+                    </DIV>
+               </form>
+
+
+
+            </div>
+           
+            <div class="list-producto col-xs-6 col-md-6">
+                <h1>Encuentre su producto</h1>
+            </div>
+        </section>
+        
+        <footer class="row"> 
+                <div class="footer-logo col-xs-12 col-md-4"> <p> logo </p> </div>
+                <div class="footer-creado col-xs-12 col-md-4"> <p> Esta pagina fue creada por:Pablo</p></div>
+                <divc class="footer-inicio col-xs-12 col-md-4"> <p> Inicio </p> </div>          
+        </footer>
+    </div>
+    
+
+    <script src="/formulario de pedido/script-pedido.js"> </script>
+    <script src="/dist/js/jquery.js"></script>
+    <script src="/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
