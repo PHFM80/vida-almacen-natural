@@ -65,16 +65,24 @@
                         <p>Recuede que el envio a domicilio tiene un costo adicional.</p>
 
                         <div class="form-group ">
-                            <label for="direccion" id="direccion">Dirección:</label>
-                            <input  class="form-control" type="text" name="Calle" id="direccion"  placeholder="Nombre de la calle">
+                            <label for="direccion" id="direc">Dirección:</label>
+                            <input  class="form-control" 
+                                    type="text" name="Calle" 
+                                    id="direccion"  placeholder="Nombre de la calle"
+                                    required disable="">
                         </div>
                         <div class="form-group">
-                            <label for="numero" id="numero"> N°:</label>
-                            <input  class="form-control" type="number" name="numero" id="numero"  placeholder="Número">
+                            <label for="numero" id="num"> N°:</label>
+                            <input  class="form-control" type="number" 
+                                    name="numero" id="numero"  placeholder="Número"
+                                    required disable="">
+                                    
                         </div>
                         <div class="form-group">
-                            <label for="localidad" id="localidad">Localidad:</label>
-                            <select  class="form-control" name="localidad" id="localidad" placeholder="form-control">
+                            <label for="localidad" id="loc">Localidad:</label>
+                            <select  class="form-control" name="localidad" 
+                                    id="localidad" placeholder="form-control"
+                                    required disable="">
                                     <option value=""> </option>
                                     <option value="">Godoy Cruz </option>
                                     <option value="">Guaymallen </option>
@@ -86,6 +94,7 @@
                             </select>
                         </div>
                     </div>
+
                     <div id="datoDireccion" style="display: none">
                             <p>Esta es la direccion</p>
                     </div>
